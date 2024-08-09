@@ -28,7 +28,7 @@ const imageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprit
 ---
 
 <MainLayout
-  title={`${name} - #${id} | Pokelist`}
+  title={`Pokemon Static | ${name} - #${id}`}
   image={imageUrl}
   description={`Check out ${name} from the Pokelist!`}
 >
@@ -63,10 +63,7 @@ const imageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprit
 </MainLayout>
 
 <script>
-  interface FavoritePokemon {
-    name: string;
-    id: string;
-  }
+  import type { FavoritePokemon } from "@interfaces/favorite-pokemon";
 
   const checkFavorite = (
     btnOutline: HTMLButtonElement,
@@ -138,7 +135,7 @@ const imageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprit
     loadListeners(btnFavorite, btnOutline, btnFull, name, id);
   };
 
-  handlePageLoad();
+  document.addEventListener("astro:page-load", handlePageLoad);
 </script>
 
 <style>

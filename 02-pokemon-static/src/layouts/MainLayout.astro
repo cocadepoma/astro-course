@@ -1,5 +1,5 @@
 ---
-// import { ViewTransitions } from "astro:transitions";
+import { ViewTransitions } from "astro:transitions";
 import { siteInfo } from "src/constants/site-info";
 import NavBar from "@components/shared/NavBar.astro";
 
@@ -34,12 +34,7 @@ const {
 
     <title>{title}</title>
 
-    <!-- <ViewTransitions /> -->
-    <style>
-      @view-transition {
-        navigation: auto;
-      }
-    </style>
+    <ViewTransitions />
   </head>
   <body class="bg-slate-800 text-slate-100">
     <NavBar />
@@ -49,3 +44,9 @@ const {
     </main>
   </body>
 </html>
+
+<style>
+  @view-transition {
+    navigation: auto;
+  }
+</style>
