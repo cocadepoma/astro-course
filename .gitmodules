@@ -1,0 +1,6 @@
+[submodule "03-astro-blog"]
+	path = 03-astro-blog
+	url = git@github.com:cocadepoma/astro-blog.git
+[submodule "05-astro-http"]
+	path = 05-astro-http
+	url = git@github.com:cocadepoma/astro-http.git
