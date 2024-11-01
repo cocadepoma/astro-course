@@ -4,3 +4,9 @@
 [submodule "05-astro-http"]
 	path = 05-astro-http
 	url = git@github.com:cocadepoma/astro-http.git
+[submodule "06-auth"]
+	path = 06-auth
+	url = git@github.com:cocadepoma/astro-auth.git
+[submodule "07-store"]
+	path = 07-store
+	url = git@github.com:cocadepoma/astro-store.git
